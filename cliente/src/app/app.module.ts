@@ -11,6 +11,7 @@ import {routing} from "./app.routes";
 import { ListarAlbumComponent } from './listar-album/listar-album.component';
 import { ListarArtistaComponent } from './listar-artista/listar-artista.component';
 import { UrlservidorService } from './service/urlservidor.service';
+import { EditarAlbumComponent } from './editar-album/editar-album.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { UrlservidorService } from './service/urlservidor.service';
     AlbumComponent,
     HomeComponent,
     ListarAlbumComponent,
-    ListarArtistaComponent
+    ListarArtistaComponent,
+    EditarAlbumComponent
   ],
   imports: [
     BrowserModule,

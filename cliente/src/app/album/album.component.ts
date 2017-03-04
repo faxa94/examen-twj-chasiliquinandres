@@ -9,9 +9,9 @@ import { UrlservidorService } from '../service/urlservidor.service';
   styleUrls: ['./album.component.css']
 })
 export class AlbumComponent implements OnInit {
-   private _parametros: any;
-  productos=[];
-  nuevoProducto= {};
+  private _parametros: any;
+  albumes=[];
+  nuevoAlbum= {};
 
   //constructor
   constructor(private _ActivatedRoute: ActivatedRoute,
@@ -32,9 +32,9 @@ export class AlbumComponent implements OnInit {
     this._http.post(this._masterURL.url+'Album',album)
       .subscribe(
         (res:Response)=>{
-          this.productos.push(res.json());
-          console.log(this.productos);
-          //this.nuevoProducto = {};
+          this.albumes.push(res.json());
+          console.log(this.albumes);
+          this.nuevoAlbum = {};
         },
         (err)=>{
           console.log(err)
