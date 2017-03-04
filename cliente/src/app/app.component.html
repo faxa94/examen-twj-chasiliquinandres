@@ -1,3 +1,33 @@
-<h1>
-  {{title}}
-</h1>
+   <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span>MENU</span>
+          </button>
+          <a class="navbar-brand" [routerLink]="['/home']">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artista <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/artista">Nuevo Artista..</a></li>
+       
+                  <li><a href="/listarArtista">Listar Artistas</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Album <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/album">Nuevo Album..</a></li>
+        
+                  <li><a href="/listarAlbum">Listar Albums</a></li>
+                </ul>
+              </li>
+            
+           </ul>
+        </div>
+      </div>
+    </nav>
+<router-outlet></router-outlet>
