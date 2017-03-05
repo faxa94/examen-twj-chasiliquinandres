@@ -5,7 +5,8 @@ import {ArtistaComponent} from "./artista/artista.component";
 import {AlbumComponent} from "./album/album.component";
 import {ListarAlbumComponent} from "./listar-album/listar-album.component";
 import {EditarAlbumComponent} from "./editar-album/editar-album.component";
-
+import {ListarArtistaComponent} from "./listar-artista/listar-artista.component";
+import {EditarArtistaComponent} from "./editar-artista/editar-artista.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -13,7 +14,10 @@ export const routes: Routes = [
   {path: 'artista', component: ArtistaComponent},
   {path: 'album', component: AlbumComponent},
   {path: 'albumListar', component: ListarAlbumComponent},
-  {path: 'albumEditar', component: EditarAlbumComponent},
+  {path: 'artistaListar', component: ListarArtistaComponent},
+  {path: 'albumListar/:idAlbum/albumEditar', component: EditarAlbumComponent},
+  {path: 'artistaListar/:idArtista/artistaEditar', component: EditarArtistaComponent},
+  
 ];
 
 

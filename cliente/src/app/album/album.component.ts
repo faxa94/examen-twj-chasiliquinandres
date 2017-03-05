@@ -9,7 +9,6 @@ import { UrlservidorService } from '../service/urlservidor.service';
   styleUrls: ['./album.component.css']
 })
 export class AlbumComponent implements OnInit {
-  private _parametros: any;
   albumes=[];
   nuevoAlbum= {};
 

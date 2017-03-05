@@ -1,0 +1,16 @@
+<div class="row" *ngFor="let artista of artistas">
+
+  <div class="col-lg-4">
+    <div class="jumbotron">
+      <h2>{{artista.nombre}}</h2>
+      <p>{{artista.estilo}}</p>
+      <p>{{artista.idAlbum.nombre}}</p>
+      <p>{{artista.paisResidencia}}</p>
+      <p>
+        <a class="btn btn-danger" (click)="borrarArtista(artista.id)" role="button">Borrar</a>
+        <a class="btn btn-primary" [routerLink]="[artista.id,'artistaEditar']" role="button">Editar »</a>
+      </p>
+    </div>
+  </div>
+
+</div>

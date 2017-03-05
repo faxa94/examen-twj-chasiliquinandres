@@ -1,6 +1,5 @@
 
   <div class="row" *ngFor="let album of albumes">
-
  
         <div class="col-lg-4">
           <div class="jumbotron">
@@ -8,12 +7,11 @@
           <p>{{album.fechaLanzamiento}}</p>
           <p>{{album.urlPortada}}</p>
           <p>
-          <a class="btn btn-danger" href="/Album/destroy/<%=album[i].nombre%>" role="button">Borrar</a>
-          <a class="btn btn-primary" [routerLink]="['/albumEditar']" role="button">Editar »</a>
+          <a class="btn btn-danger" (click)="borrarAlbum(album.id)" role="button">Borrar</a>
+          <a class="btn btn-primary" [routerLink]="[album.id,'albumEditar']" role="button">Editar »</a>
           </p>
               </div>
         </div>
   </div>
 
- 
  

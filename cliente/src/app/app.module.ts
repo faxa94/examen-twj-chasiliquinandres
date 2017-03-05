@@ -12,6 +12,7 @@ import { ListarAlbumComponent } from './listar-album/listar-album.component';
 import { ListarArtistaComponent } from './listar-artista/listar-artista.component';
 import { UrlservidorService } from './service/urlservidor.service';
 import { EditarAlbumComponent } from './editar-album/editar-album.component';
+import { EditarArtistaComponent } from './editar-artista/editar-artista.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EditarAlbumComponent } from './editar-album/editar-album.component';
     HomeComponent,
     ListarAlbumComponent,
     ListarArtistaComponent,
-    EditarAlbumComponent
+    EditarAlbumComponent,
+    EditarArtistaComponent
   ],
   imports: [
     BrowserModule,
