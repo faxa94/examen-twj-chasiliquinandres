@@ -7,7 +7,7 @@
       <p>{{artista.idAlbum.nombre}}</p>
       <p>{{artista.paisResidencia}}</p>
       <p>
-        <a class="btn btn-danger" (click)="borrarArtista(artista.id)" role="button">Borrar</a>
+        <a class="btn btn-danger" [routerLink]="[artista.id,'artistaBorrar']" role="button">Borrar</a>
         <a class="btn btn-primary" [routerLink]="[artista.id,'artistaEditar']" role="button">Editar »</a>
       </p>
     </div>

@@ -16,7 +16,7 @@
     <label for="">Album: {{albumArtista}}</label>
     <select required class="form-control" name="idAlbum" value="{{albumArtista}}"  [(ngModel)]="nuevoArtista.idAlbum" >
         <option *ngFor="let album of albumes"        
-        [value]='album.id' > {{album.nombre}}  </option>          
+        [value]='album.nombre' > {{album.nombre}}  </option>          
     </select>
      </div>
     <br>

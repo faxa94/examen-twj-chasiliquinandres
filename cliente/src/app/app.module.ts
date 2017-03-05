@@ -13,6 +13,8 @@ import { ListarArtistaComponent } from './listar-artista/listar-artista.componen
 import { UrlservidorService } from './service/urlservidor.service';
 import { EditarAlbumComponent } from './editar-album/editar-album.component';
 import { EditarArtistaComponent } from './editar-artista/editar-artista.component';
+import { BorrarAlbumComponent } from './borrar-album/borrar-album.component';
+import { BorrarArtistaComponent } from './borrar-artista/borrar-artista.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { EditarArtistaComponent } from './editar-artista/editar-artista.componen
     ListarAlbumComponent,
     ListarArtistaComponent,
     EditarAlbumComponent,
-    EditarArtistaComponent
+    EditarArtistaComponent,
+    BorrarAlbumComponent,
+    BorrarArtistaComponent
   ],
   imports: [
     BrowserModule,

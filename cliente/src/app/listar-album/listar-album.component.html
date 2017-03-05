@@ -7,8 +7,8 @@
           <p>{{album.fechaLanzamiento}}</p>
           <p>{{album.urlPortada}}</p>
           <p>
-          <a class="btn btn-danger" (click)="borrarAlbum(album.id)" role="button">Borrar</a>
-          <a class="btn btn-primary" [routerLink]="[album.id,'albumEditar']" role="button">Editar »</a>
+          <a class="btn btn-danger" [routerLink]="[album.nombre,'albumBorrar']" role="button">Borrar</a>
+          <a class="btn btn-primary" [routerLink]="[album.nombre,'albumEditar']" role="button">Editar »</a>
           </p>
               </div>
         </div>

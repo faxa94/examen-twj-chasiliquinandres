@@ -7,6 +7,8 @@ import {ListarAlbumComponent} from "./listar-album/listar-album.component";
 import {EditarAlbumComponent} from "./editar-album/editar-album.component";
 import {ListarArtistaComponent} from "./listar-artista/listar-artista.component";
 import {EditarArtistaComponent} from "./editar-artista/editar-artista.component";
+import {BorrarAlbumComponent} from "./borrar-album/borrar-album.component";
+import {BorrarArtistaComponent} from "./borrar-artista/borrar-artista.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -17,7 +19,8 @@ export const routes: Routes = [
   {path: 'artistaListar', component: ListarArtistaComponent},
   {path: 'albumListar/:idAlbum/albumEditar', component: EditarAlbumComponent},
   {path: 'artistaListar/:idArtista/artistaEditar', component: EditarArtistaComponent},
-  
+  {path: 'albumListar/:idAlbum/albumBorrar', component: BorrarAlbumComponent},
+  {path: 'artistaListar/:idArtista/artistaBorrar', component: BorrarArtistaComponent},
 ];
 
 

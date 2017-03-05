@@ -34,7 +34,7 @@ export class ListarAlbumComponent implements OnInit {
       }
       )
   }
-  borrarAlbum(id: number) {
+  borrarAlbum(id: string) {
     this._http.delete(this._masterURL.url + "album/" + id)
       .subscribe(
       (res) => {
