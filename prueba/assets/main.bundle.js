@@ -628,7 +628,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var UrlservidorService = (function () {
     function UrlservidorService() {
-        this._url = "http://localhost:1337/";
+        this._url = "https://examen-twj-chasiliquinandres-armendariz.c9users.io/";
     }
     Object.defineProperty(UrlservidorService.prototype, "url", {
         get: function () {
