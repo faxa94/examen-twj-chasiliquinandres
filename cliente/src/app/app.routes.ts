@@ -13,8 +13,8 @@ import {BorrarArtistaComponent} from "./borrar-artista/borrar-artista.component"
 export const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
-  {path: 'artista', component: ArtistaComponent},
-  {path: 'album', component: AlbumComponent},
+  {path: 'artistaNuevo', component: ArtistaComponent},
+  {path: 'albumNuevo', component: AlbumComponent},
   {path: 'albumListar', component: ListarAlbumComponent},
   {path: 'artistaListar', component: ListarArtistaComponent},
   {path: 'albumListar/:idAlbum/albumEditar', component: EditarAlbumComponent},

@@ -31,15 +31,18 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
+  'get /albumNuevo': 'RutasController.crearAlbum',
+  /*
   'get /crearAlbum': 'RutasController.crearAlbum',
   'get /Home': 'RutasController.home',
   'get /': 'RutasController.home',
-  'get /nuevoAlbum': 'RutasController.crearAlbum',
+  'get /albumNuevo': 'RutasController.crearAlbum',
   'get /editarAlbum': 'RutasController.editarAlbum',
   'get /listarAlbum': 'RutasController.listarAlbum',
   'get /nuevoArtista': 'RutasController.crearArtista',
   'get /listarArtista': 'RutasController.listarArtista',
   'get /editarArtista': 'RutasController.editarArtista',
+  */
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

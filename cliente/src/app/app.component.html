@@ -12,17 +12,17 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artista <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/artista">Nuevo Artista..</a></li>
+                  <li><a [routerLink]="['/artistaNuevo']">Nuevo Artista..</a></li>
        
-                  <li><a href="/artistaListar">Listar Artistas</a></li>
+                  <li><a [routerLink]="['/artistaListar']">Listar Artistas</a></li>
                 </ul>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Album <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/album">Nuevo Album..</a></li>
+                  <li><a [routerLink]="['/albumNuevo']" >Nuevo Album..</a></li>
         
-                  <li><a href="/albumListar">Listar Albums</a></li>
+                  <li><a [routerLink]="['/albumListar']">Listar Albums</a></li>
                 </ul>
               </li>
             
